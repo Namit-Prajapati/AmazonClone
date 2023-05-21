@@ -1,6 +1,7 @@
 import "./App.css";
-import { Header } from "./Header";
-import { Home } from "./Home";
+import { Checkout } from "./Components/Checkout";
+import { Header } from "./Components/Header";
+import { Home } from "./Components/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       element: (
         <>
           <Header />
-          <h1>Checkout</h1>
+          <Checkout />
         </>
       ),
     },
