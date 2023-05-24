@@ -8,6 +8,7 @@ import { Register } from "./Components/Register";
 import { useStateValue } from "./StateProvider";
 import { useEffect } from "react";
 import { auth } from "./firebase";
+import { Payment } from "./Components/Payment";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -22,7 +23,7 @@ function App() {
         dispatch({ type: "SET_USER", user: null });
       }
     });
-  },[]);
+  }, []);
 
   const router = createBrowserRouter([
     {
@@ -56,6 +57,15 @@ function App() {
       element: (
         <>
           <Register />
+        </>
+      ),
+    },
+    {
+      path: "/payment",
+      element: (
+        <>
+          <Header />
+          <Payment />
         </>
       ),
     },
