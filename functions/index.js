@@ -20,9 +20,7 @@ const logger = require("firebase-functions/logger");
 
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(
-  "sk_test_51NBtNgSG7ETCF3tSlEebc5MswkjHSBofTXEJ5FGOwPPYLxPBpUwpNx5PBAlCZmb2GLlsI4IEzLM1fW4W7O3Rn3Re00s0w2KQZM"
-);
+const stripe = require("stripe")(process.env.SK);
 
 //App Config
 const app = express();

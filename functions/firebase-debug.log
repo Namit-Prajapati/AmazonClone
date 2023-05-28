@@ -7963,3 +7963,470 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 
 [info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
 [debug] [2023-05-28T10:14:10.632Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:14:11.647Z] Validating nodejs source
+[debug] [2023-05-28T10:14:14.027Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:14:14.028Z] Building nodejs source
+[debug] [2023-05-28T10:14:14.028Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-05-28T10:14:14.040Z] [work-queue] {"queuedWork":["/clone-cf1cb/us-central1/api/payments/create-2023-05-28T10:14:14.040Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-28T10:14:14.040Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-cf1cb/us-central1/api/payments/create-2023-05-28T10:14:14.040Z"],"workRunningCount":1}
+[debug] [2023-05-28T10:14:14.040Z] Accepted request OPTIONS /clone-cf1cb/us-central1/api/payments/create --> us-central1-api
+[debug] [2023-05-28T10:14:14.043Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-28T10:14:14.043Z] [functions] Got req.url=/clone-cf1cb/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-cf1cb/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2023-05-28T10:14:14.043Z] [worker-pool] Cleaned up workers for us-central1-api: 3 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 3 --> 0"}}
+[debug] [2023-05-28T10:14:14.049Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-05-28T10:14:14.049Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-05-28T10:14:14.050Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:14:14.059Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:14:14.419Z] Serving at port 8213
+
+[debug] [2023-05-28T10:14:14.821Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-28T10:14:14.828Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-05-28T10:14:15.470Z] [runtime-status] [15064] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.8.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.8.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-05-28T10:14:15.472Z] [runtime-status] [15064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-05-28T10:14:15.472Z] [runtime-status] [15064] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-05-28T10:14:15.474Z] [runtime-status] [15064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-05-28T10:14:15.841Z] [runtime-status] [15064] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-05-28T10:14:15.841Z] [runtime-status] [15064] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-05-28T10:14:15.842Z] [runtime-status] [15064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-05-28T10:14:15.844Z] [runtime-status] [15064] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.8.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.8.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-05-28T10:14:15.848Z] [runtime-status] [15064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-05-28T10:14:15.849Z] [runtime-status] [15064] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.8.0","resolution":"D:\\Learn\\amazon clone\\reactamazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.8.0\",\"resolution\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-05-28T10:14:16.126Z] [runtime-status] [15064] Functions runtime initialized. {"cwd":"D:\\Learn\\amazon clone\\reactamazon\\functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Functions runtime initialized. {\"cwd\":\"D:\\\\Learn\\\\amazon clone\\\\reactamazon\\\\functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2023-05-28T10:14:16.126Z] [runtime-status] [15064] Listening to port: \\?\pipe\fire_emu_7fbf539e70ffdc03 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15064] Listening to port: \\\\?\\pipe\\fire_emu_7fbf539e70ffdc03"}}
+[debug] [2023-05-28T10:14:16.218Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: IDLE"}}
+[debug] [2023-05-28T10:14:16.219Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-05-28T10:14:16.220Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: BUSY"}}
+[debug] [2023-05-28T10:14:16.224Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.731ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.731ms"}}
+[debug] [2023-05-28T10:14:16.225Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: IDLE"}}
+[debug] [2023-05-28T10:14:16.225Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-05-28T10:14:16.225Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-05-28T10:14:16.226Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-28T10:14:16.226Z] [work-queue] {"queuedWork":["/clone-cf1cb/us-central1/api/payments/create-2023-05-28T10:14:16.226Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-28T10:14:16.226Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-cf1cb/us-central1/api/payments/create-2023-05-28T10:14:16.226Z"],"workRunningCount":1}
+[debug] [2023-05-28T10:14:16.226Z] Accepted request POST /clone-cf1cb/us-central1/api/payments/create --> us-central1-api
+[debug] [2023-05-28T10:14:16.229Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-28T10:14:16.229Z] [functions] Got req.url=/clone-cf1cb/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-cf1cb/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2023-05-28T10:14:16.229Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-05-28T10:14:16.230Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: BUSY"}}
+[info] >  [ {"user":"[","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m ["}}
+[info] >    { {"user":"  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   {"}}
+[info] >      id: '49538094', {"user":"    id: '49538094',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: '49538094',"}}
+[info] >      title: 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl', {"user":"    title: 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     title: 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl',"}}
+[info] >      image: 'https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg', {"user":"    image: 'https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     image: 'https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg',"}}
+[info] >      price: 239, {"user":"    price: 239,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     price: 239,"}}
+[info] >      rating: 4 {"user":"    rating: 4","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     rating: 4"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    { {"user":"  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   {"}}
+[info] >      id: '49538094', {"user":"    id: '49538094',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: '49538094',"}}
+[info] >      title: 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl', {"user":"    title: 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     title: 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl',"}}
+[info] >      image: 'https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg', {"user":"    image: 'https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     image: 'https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg',"}}
+[info] >      price: 239, {"user":"    price: 239,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     price: 239,"}}
+[info] >      rating: 4 {"user":"    rating: 4","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     rating: 4"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  ] {"user":"]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m ]"}}
+[debug] [2023-05-28T10:14:17.469Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1239.4266ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1239.4266ms"}}
+[debug] [2023-05-28T10:14:17.470Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: IDLE"}}
+[debug] [2023-05-28T10:14:17.470Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-05-28T10:14:17.470Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-05-28T10:14:17.470Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-28T10:18:14.296Z] File D:\Learn\amazon clone\reactamazon\functions\package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\package-lock.json changed, reloading triggers"}}
+[debug] [2023-05-28T10:18:14.302Z] File D:\Learn\amazon clone\reactamazon\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-05-28T10:18:15.308Z] Validating nodejs source
+[debug] [2023-05-28T10:18:16.421Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:18:16.421Z] Building nodejs source
+[debug] [2023-05-28T10:18:16.422Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-05-28T10:18:16.422Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:18:16.430Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:18:16.742Z] Serving at port 8669
+
+[debug] [2023-05-28T10:18:17.176Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-28T10:18:17.181Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-05-28T10:18:17.195Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-05-28T10:18:17.195Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: FINISHING"}}
+[debug] [2023-05-28T10:18:17.202Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: exited"}}
+[debug] [2023-05-28T10:18:17.202Z] [worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-48188e37-0987-417d-8000-1cd1bc53f24e]: FINISHED"}}
+[debug] [2023-05-28T10:18:54.402Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:18:55.405Z] Validating nodejs source
+[debug] [2023-05-28T10:18:56.835Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:18:56.835Z] Building nodejs source
+[debug] [2023-05-28T10:18:56.835Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:18:56.838Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:18:56.846Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:18:56.854Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:18:57.197Z] Serving at port 8033
+
+[debug] [2023-05-28T10:18:57.596Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: pro is not defined
+[debug] [2023-05-28T10:18:57.597Z] Failed to parse functions.yaml incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: pro is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: pro is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: pro is not defined\n                                         ^"}
+[debug] [2023-05-28T10:18:57.602Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: pro is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: pro is not defined"}}
+[debug] [2023-05-28T10:18:57.869Z] Validating nodejs source
+[debug] [2023-05-28T10:18:59.055Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:18:59.055Z] Building nodejs source
+[debug] [2023-05-28T10:18:59.056Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:18:59.057Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:18:59.064Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:18:59.357Z] Serving at port 8672
+
+[debug] [2023-05-28T10:18:59.795Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: pro is not defined
+[debug] [2023-05-28T10:18:59.795Z] Failed to parse functions.yaml incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: pro is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: pro is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: pro is not defined\n                                         ^"}
+[debug] [2023-05-28T10:18:59.803Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: pro is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: pro is not defined"}}
+[debug] [2023-05-28T10:19:00.203Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:19:01.218Z] Validating nodejs source
+[debug] [2023-05-28T10:19:02.555Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:19:02.556Z] Building nodejs source
+[debug] [2023-05-28T10:19:02.556Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:19:02.559Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:19:02.567Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:19:02.575Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:19:02.906Z] Serving at port 8669
+
+[debug] [2023-05-28T10:19:03.296Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-28T10:19:03.301Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-05-28T10:19:03.401Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:19:04.405Z] Validating nodejs source
+[debug] [2023-05-28T10:19:05.667Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:19:05.667Z] Building nodejs source
+[debug] [2023-05-28T10:19:05.667Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:19:05.670Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:19:05.677Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:19:05.685Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:19:06.008Z] Serving at port 8951
+
+[debug] [2023-05-28T10:19:06.021Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-05-28T10:19:06.021Z] Failed to parse functions.yaml incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-05-28T10:19:06.024Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-05-28T10:19:06.689Z] Validating nodejs source
+[debug] [2023-05-28T10:19:09.065Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:19:09.065Z] Building nodejs source
+[debug] [2023-05-28T10:19:09.065Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:19:09.068Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:19:09.075Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:19:09.084Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:19:09.387Z] Serving at port 8867
+
+[debug] [2023-05-28T10:19:09.805Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-28T10:19:09.812Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-05-28T10:19:10.094Z] Validating nodejs source
+[debug] [2023-05-28T10:19:11.286Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:19:11.286Z] Building nodejs source
+[debug] [2023-05-28T10:19:11.286Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:19:11.288Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:19:11.297Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:19:11.305Z] File D:\Learn\amazon clone\reactamazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Learn\\amazon clone\\reactamazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-05-28T10:19:11.614Z] Serving at port 8513
+
+[debug] [2023-05-28T10:19:12.030Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-28T10:19:12.036Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-05-28T10:19:12.318Z] Validating nodejs source
+[debug] [2023-05-28T10:19:13.848Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-28T10:19:13.848Z] Building nodejs source
+[debug] [2023-05-28T10:19:13.848Z] Failed to find version of module node: reached end of search path D:\Learn\amazon clone\reactamazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-28T10:19:13.853Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-28T10:19:13.863Z] Found firebase-functions binary at 'D:\Learn\amazon clone\reactamazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-28T10:19:14.265Z] Serving at port 8082
+
+[debug] [2023-05-28T10:19:14.722Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-28T10:19:14.732Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
